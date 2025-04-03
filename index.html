@@ -9,23 +9,25 @@
 </head>
 <body>
     <header>
-        <img src="./assets/logo_short.png" alt="" srcset="">
         <nav class="navbar">
-            <button  lass="closebtn" style="background-color: #00000000; border-style: none;" onclick="closeNavigationBar()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(238, 238, 238);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
-            </button>
-            <ul>
+            <div id="nav">
+                <img src="/assets/logo_short.png" alt="" srcset="">
+                <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(225, 225, 225);transform: ;msFilter:;"><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg>
+                 </i>
+            </div>
+            <div id="full">
                 <li><a href="#">Home</a></li>
                 <li><a href="/pages/about.html">About me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="/pages/contact.html">Contact</a></li>
-            </ul>
+                <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(225, 225, 225);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+              </i>
+            </div>
         </nav>
-        <button class="openbtn" style="background-color: #00000000; border-style: none;" onclick="openNavigationBar()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(239, 235, 235);transform: ;msFilter:;"><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg>
-        </button>
     </header>
-    <section class="hero-section">
+    <section class="hero-section" id="hero-section">
         <section>
             <img src="./assets/kat_image.png" alt="">
         </section>
@@ -90,7 +92,8 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57515.38273225073!2d28.374046157632026!3d-25.713977059502586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9558c1f6a5bb69%3A0x831017ba520c79a!2sMamelodi%2C%20Pretoria%2C%200122!5e0!3m2!1sen!2sza!4v1743524607693!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </footer>
-    <script src="/scripts/navbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/navbar.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
