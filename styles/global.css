@@ -362,27 +362,50 @@ header{
   #about-heading .info p{
     text-wrap: wrap;
   }
-#about-desc{
+  .about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+.about-desc{
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  position: relative;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 15px;
+  padding: 5%;
   margin: 15px;
 }
+.about-desc .info{
+  width: 50%;
+}
 .about-header{
-  margin-top: 17%;
+  margin-top: 7%;
   position: relative;
   width: 100%;
-  height: 20vh;
-}
-.about-header img{
-  width: 10%;
-  height: 100%;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .about-context{
   position: relative;
+  padding: 15%;
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image1, .image2, .image3{
+  border-radius: 5%;
+}
+.image1{
+  rotate: -9deg;
+}
+.image3{
+  rotate: 9deg;
 }
 .hero-section{
   width: 100%;
